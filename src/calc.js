@@ -1,4 +1,4 @@
-_dealWithResult = function (number){
+const _dealWithResult = function (number){
     const result = parseInt(number);
 
     if(isNaN(result)){
