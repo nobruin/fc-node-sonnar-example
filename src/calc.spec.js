@@ -21,4 +21,13 @@ describe("Calc unit tests", () => {
         const result = calc.subtraction(6,2)
         expect(result).toBe(4)
     });
+
+
+    it("Should be Error when value of operation is invalid", () => {
+        expect(() => { calc.div(2,0); }).toThrow(`Invalid Operation`);
+    })
+
+    it("Should be Error when value of operation is invalid", () => {
+        expect(() => { calc.div("bla",100); }).toThrow(`Invalid Operation`);
+    })
 })

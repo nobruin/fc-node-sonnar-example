@@ -1,36 +1,27 @@
 _dealWithResult = function (number){
-    let result = parseInt(number);
+    const result = parseInt(number);
 
     if(isNaN(result)){
-        
-        console.error("Invalid Operation"); 
-        throw new Error("Invalid Operation");
+        throw new Error(`Invalid Operation`);
     }
 
     return result;
 }
 
-sum = function (n1, n2){
-    let number = _dealWithResult(n1 + n2);
-    return number;
+const sum = function (n1, n2){
+    return _dealWithResult(n1 + n2);    
 }
 
-sub = function(n1, n2){
-    let number = _dealWithResult(n1 - n2);
-
-    return number;
+const sub = function(n1, n2){
+    return _dealWithResult(n1 - n2);    
 }
 
-multiplication = function(n1, n2){
-    let number = _dealWithResult(n1 * n2);
-
-    return number;
+const multiplication = function(n1, n2){
+    return _dealWithResult(n1 * n2);
 }
 
-division = function(n1, n2){
-    let number = _dealWithResult(n1 / n2);
-
-    return number;
+const division = function(n1, n2){
+    return _dealWithResult(n1 / n2);    
 }
 
 module.exports = {
