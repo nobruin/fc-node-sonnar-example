@@ -1,4 +1,4 @@
-name: sum-example-ci (kotlin)
+name: sum-example-ci (js)
 
 on:
   pull_request:
